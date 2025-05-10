@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaders</title>
+    <link rel="stylesheet" href="css/leader.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+             <div class="logo">ChaRis</div>
+             <ul class="sidebar">
+                 <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a  class="active" href="leaders.html">Leaders</a></li>
+                 <li><a href="members.html">Members</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+             </ul>
+             <ul>
+                 <li><a class="hideOnMobile" href="index.html">Home </a></li>
+                 <li><a class="hideOnMobile" href="leaders.html">Leaders</a></li>
+                 <li><a class="hideOnMobile" class="active" href="members.html">Members</a></li>
+                 <li><a class="hideOnMobile" href="gallery.html">Gallery</a></li>
+                 <li class="menu-btn" onclick="showSidebar()"><a href="#" > <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                 </li>
+             </ul>
+            
+        </nav>
+     </header>
+     <script>
+         function showSidebar(){
+             const sidebar = document.querySelector(".sidebar")
+             sidebar.style.display = "flex"
+     }
+ 
+         function hideSidebar(){
+             const sidebar = document.querySelector(".sidebar")
+             sidebar.style.display = "none" 
+         }
+    </script>
+    <main>
+       <section class="featured-container">
+        <div class="featured-image">
+            <img src="images/jason.jpeg" alt="P.Jason">
+        </div>
+        <div class="featured-content">
+            <h2>Bobade Jason</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Non id quaerat minus libero itaque vitae dicta aut quasi ea.
+                 Quo inventore reiciendis 
+                placeat blanditiis rerum nihil 
+                incidunt doloremque, omnis dolore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad rerum 
+                facilis velit iure minima nulla deserunt! Eveniet tempora commodi,
+                 quibusdam obcaecati enim eligendi voluptates, 
+                ipsa molestiae doloribus dolorem quos!</p>
+        </div>
+       </section>
+       <section class="featured-container">
+        <div class="featured-image">
+            <img src="images/taiwo.jpg" alt="P.Jason">
+        </div>
+        <div class="featured-content">
+            <h2>Adeoluwa Ojo Samuel</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Non id quaerat minus libero itaque vitae dicta aut quasi ea.
+                 Quo inventore reiciendis 
+                placeat blanditiis rerum nihil 
+                incidunt doloremque, omnis dolore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad rerum 
+                facilis velit iure minima nulla deserunt! Eveniet tempora commodi,
+                 quibusdam obcaecati enim eligendi voluptates, 
+                ipsa molestiae doloribus dolorem quos!</p>
+        </div>
+       </section>
+        
+    </main>
+    <footer>
+        <p>&COPY; 2025 Today. All Right Reserved</p>
+    </footer>
+</body>
+</html>
